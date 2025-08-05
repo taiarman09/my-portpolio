@@ -50,6 +50,7 @@
             list-style: none;
             gap: 50px;
         }
+
         .display{
             display: flex;
         }
@@ -71,7 +72,14 @@
             flex-wrap: wrap;
             gap: 60px;
         }
-
+        .display-4{
+            display: flex;
+            justify-content: center ;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+            
+        }
         @media(max-width:1150px){
             .display-1{
                 display: block;
@@ -79,7 +87,7 @@
         }
 
         li:hover{
-            color: blue;
+            color: rgb(19, 255, 172);
         }
 
         .font1{
@@ -215,6 +223,9 @@
             background-color: rgba(0, 0, 0, 0); 
             border-color: blue blueviolet;
         }
+        .button:hover{
+             color: rgb(19, 255, 172);
+        }
         .button2{
             color: white;
             background-color: rgba(0, 0, 0, 0);
@@ -225,6 +236,10 @@
             border-radius: 15px;
             height: 50px;
             max-width: 200px;
+        }
+        .button2:hover{
+            transform: scale(1.1);
+             color: rgb(19, 255, 172);
         }
         @media(max-width:700px){
             .button2{
@@ -329,6 +344,7 @@
             border-radius: 30px;
             margin-left: 100px;
             flex-wrap: wrap;
+            margin-top: 20px;
             img{
                 border-radius: 30px;
             }
@@ -353,6 +369,7 @@
             </ul>
         </nav>
         <nav><button class="button">ENG<i class="fa-solid fa-globe"></i></button></nav>
+        
     </header>
 
     <section class="display-1 w-100">
@@ -439,13 +456,12 @@
     <section>
          <div class="font3">MY Certificate</div>
 
-         <div class="display-3">
+         <div class="display-4">
             <div class="card-4 image-3"><img height="100%" width="100%" src="./image/school-marksheet.png" alt=""></div>
-            <div class="card-4  image-3"><img height="100%" width="100%" src="./image/marksheet.png" alt=""></div>
-            <div class="card-4  image-3"><img height="100%" width="100%" src="./image/skiil-marksheet.png" alt=""></div>
+            <div class="card-4 image-3"><img height="100%" width="100%" src="./image/marksheet.png" alt=""></div>
+            <div class="card-4 image-3"><img height="100%" width="100%" src="./image/skiil-marksheet.png" alt=""></div>
          </div>
     </section>
 
-   
 </body>
 </html>
