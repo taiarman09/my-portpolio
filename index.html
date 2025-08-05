@@ -12,7 +12,7 @@
         }
         body{
             background: linear-gradient(90deg,rgba(0, 0, 0, 1) 29%, rgba(59, 36, 150, 1) 100%);
-            width: 100%;
+            max-width: 100%;
         }
         header{
             display: flex;
@@ -28,12 +28,22 @@
             height: 50px;
             margin-bottom: 50px;
         }
+        .image-2{
+            max-width: 400px;
+            height: 300px;
+        }
+
 
         .w-100{
             width: 100%;
         }
         .w-50{
             width: 50%;
+        }
+        @media(max-width:1150px){
+            .w-50{
+                width: 100%;
+            }
         }
         ul{
             display: flex;
@@ -50,6 +60,15 @@
             display: flex;
             justify-content: center;
             margin-top: 50px;
+            flex-wrap: wrap;
+            gap: 60px;
+            
+        }
+         .display-3{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            flex-wrap: wrap;
             gap: 60px;
         }
 
@@ -69,6 +88,28 @@
             margin-top: 150px;
             margin-left: 100px;
         }
+        @media(max-width:700px){
+            .font1{
+                font-size: 70px;
+                margin-left: 0px;
+            }
+        }
+        @media(max-width:520px){
+            .font1{
+                font-size: 50px;
+            }
+        }
+        @media(max-width:400px){
+            .font1{
+                font-size: 30px;
+            }
+        }
+        @media(max-width:1150px){
+            .font1{
+                margin-top: 20px;
+            }
+        }
+
         .font2{
             color: white;
             margin-top: 50px;
@@ -77,18 +118,38 @@
             flex-wrap: wrap;
             max-width: 500px;
         }
-        
+        @media(max-width:1150px){
+            .font2{
+                display: none;
+            }
+        }
         .font3{
             color: rgb(226, 43, 165);
             margin-top: 50px;
             margin-left: 100px;
             font-size: 50px;
         }
+        @media(max-width:450px){
+            .font3{
+                font-size: 30px;
+                margin-left: 0px;
+            }
+        }
+        @media(max-width:700px){
+            .font3{
+                margin-left: 0px;
+            }
+        }
         .font4{
             color: white;
             font-size: 30px;
             margin-top: 20px;
             margin-left: 20px;
+        }
+         @media(max-width:400px){
+            .font4{
+                font-size: 20px;
+            }
         }
         .font5{
             color: white;
@@ -100,6 +161,39 @@
             text-align: center;
             margin-top: 50px;
             font-size: 40px;
+        }
+        @media(max-width:650px){
+            .font6{
+                font-size: 25px;
+            }
+        }
+         @media(max-width:400px){
+            .font6{
+                font-size: 20px;
+                margin-left: 0px;
+            }
+        }
+        .font7{
+            color: white;
+            margin-top: 20px;
+            margin-left: 100px;
+        }
+        @media(min-width:1150px){
+            .font7{
+                display: none;
+                margin-left: 100px;
+            }
+        }
+        @media(max-width:1150px){
+            .font7{
+                display: block;
+                margin-left: 100px;
+            }
+        }
+        @media(max-width:700px){
+            .font7{
+                margin-left: 0px;
+            }
         }
 
         @media(max-width: 730px){
@@ -131,7 +225,11 @@
             border-radius: 15px;
             height: 50px;
             max-width: 200px;
-
+        }
+        @media(max-width:700px){
+            .button2{
+               margin-left: 0px;
+            }
         }
 
         .button:hover{
@@ -153,6 +251,16 @@
             margin-left: 100px;
             border-radius: 20px;
         }
+        @media(max-width:450px){
+            .card{
+                margin-left: 0px;
+            }
+        }
+         @media(max-width:700px){
+            .card{
+                margin-left: 0px;
+            }
+        }
         .card-1{
             max-width: 600px;
             min-height: 150px;
@@ -162,7 +270,23 @@
             border-radius: 20px;
             float: right;
         }
-        .card-3{
+          @media(max-width:450px){
+            .card-1{
+                margin-right: 0px;
+            }
+        }
+         @media(max-width:800px){
+            .card-1{
+                margin-left: 100px;
+                margin-right: 0px;
+            }
+        }
+        @media(max-width:700px){
+            .card-1{
+                margin-left: 0px;
+            }
+        }
+        .card-2{
             max-width: 600px;
             min-height: 150px;
             border: 1px solid white;
@@ -170,6 +294,49 @@
             margin-left: 100px;
             margin-bottom: 50px;
             border-radius: 20px;
+        }
+        @media(max-width:450px){
+            .card-2{
+                margin-left: 0px;
+            }
+        }
+        @media(max-width:700px){
+            .card-2{
+                margin-left: 0px;
+            }
+        }
+        .card-3{
+            border: 1px solid red;
+            max-width: 400px;
+            min-height: 450px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+         @media(max-width:600px){
+            .card-3{
+               margin-left: 0px;
+            }
+        }
+        @media(max-width:1320px){
+            .card-3{
+               margin-top: 0px;
+               margin-bottom: 20px;
+            }
+        }
+        .card-4{
+            max-width: 400px;
+            height: 500px;
+            border-radius: 30px;
+            margin-left: 100px;
+            flex-wrap: wrap;
+            img{
+                border-radius: 30px;
+            }
+        }
+         @media(max-width:550px){
+            .card-4{
+                margin-left: 0px;
+            }
         }
     </style>
     </head>
@@ -192,6 +359,7 @@
         <div class="w-50">
             <div class="font1">FRONTEND DEVELOPER</div>
             <div class="font2">I am Arman- web-developer with a passion for  creating beautiful and responsive websites.</div>
+            <div class="font7">I am Arman- web-developer with a passion for  creating beautiful and responsive websites.</div>
             <div><button class="button2">VIEW MY WORK</button></div>
         </div>
 
@@ -209,7 +377,7 @@
             <div class="font4"><i class="fa-solid fa-pen-nib" style="color: #1100ff;"></i> Web Design</div>
             <div class="font5">I can design your website from scratch. I create modern, simple, and user-friendly designs that match your brand and goals.</div>
         </div>
-        <div class="card-3">
+        <div class="card-2">
             <div class="font4"><i class="fa-solid fa-w" style="color: #1100ff;"></i> WordPress Development</div>
             <div class="font5">I build websites on wordpress, making them easy to update amd manage. it's a great choice for blogs small businesses, or portfolios.</div>
         </div>
@@ -219,24 +387,24 @@
     <hr>
 
     <section>
-        <div class="font3">SKILLE</div>
+        <div class="font3">SKILLS</div>
         <div class="font6">The skills, tools and technologies i use:</div>
-        <div class="display-2 image-1">
-            <div><img height="100%" width="100%" src="./image/html5-removebg-preview.png" alt=""></div>
-            <div><img height="100%" width="100%" src="./image/css3-removebg-preview.png" alt=""></div>
-            <div><img height="100%" width="100%" src="./image/js-removebg-preview.png" alt=""></div>
-            <div><img height="100%" width="100%" src="./image/tailwind_css-removebg-preview.png" alt=""></div>
-            <div><img height="100%" width="100%" src="./image/notion.png" alt=""></div>
-            <div><img height="100%" width="100%" src="./image/figma-removebg-preview.png" alt=""></div>
+        <div class="display-2 ">
+            <div class="image-1"><img height="100%" width="100%" src="./image/html5-removebg-preview.png" alt=""></div>
+            <div class="image-1"><img height="100%" width="100%" src="./image/css3-removebg-preview.png" alt=""></div>
+            <div class="image-1"><img height="100%" width="100%" src="./image/js-removebg-preview.png" alt=""></div>
+            <div class="image-1"><img height="100%" width="100%" src="./image/tailwind_css-removebg-preview.png" alt=""></div>
+            <div class="image-1"><img height="100%" width="100%" src="./image/notion.png" alt=""></div>
+            <div class="image-1"><img height="100%" width="100%" src="./image/figma-removebg-preview.png" alt=""></div>
         </div>
         
 
-        <div class="display-2 image-1">
-            <div><img height="100%" width="100%" src="./image/re-removebg-preview.png" alt=""></div>
-            <div><img height="100%" width="100%" src="./image/webpack-removebg-preview.png" alt=""></div>
-            <div><img height="100%" width="100%" src="./image/git-removebg-preview.png" alt=""></div>
-            <div><img height="100%" width="100%" src="./image/wordpress-removebg-preview.png" alt=""></div>
-            <div><img height="100%" width="100%" src="./image/sass-removebg-preview.png" alt=""></div>
+        <div class="display-2 ">
+            <div class="image-1"><img height="100%" width="100%" src="./image/re-removebg-preview.png" alt=""></div>
+            <div class="image-1"><img height="100%" width="100%" src="./image/webpack-removebg-preview.png" alt=""></div>
+            <div class="image-1"><img height="100%" width="100%" src="./image/git-removebg-preview.png" alt=""></div>
+            <div class="image-1"><img height="100%" width="100%" src="./image/wordpress-removebg-preview.png" alt=""></div>
+            <div class="image-1"><img height="100%" width="100%" src="./image/sass-removebg-preview.png" alt=""></div>
         </div>
         
     </section>
@@ -244,8 +412,40 @@
     <hr>
 
     <section>
+         <div class="font3">MY PROJECT WORK</div>
 
-        
+         <div class="display-3">
+
+            <div class="card-3">
+                <div class="image-2"><img height="100%" width="100%" src="./image/Screenshot-1.png" alt=""></div>
+                <div class="font4">Modern eCommerce UI for Puma Brands</div>
+                <div class="font4">git hub link </div>
+            </div>
+            <div class="card-3">
+                <div class="image-2"><img height="100%" width="100%" src="./image/Screenshot-2.png" alt=""></div>
+                <div class="font4">Modern Course Discovery Platform LearnPro </div>
+                <div class="font4">git hub link </div>
+            </div>
+            <div class="card-3">
+                <div class="image-2"><img height="100%" width="100%" src="./image/Screenshot-3.png" alt=""></div>
+                <div class="font4">Elegant Coffee Shop Website UI Design</div>
+                <div class="font4">git hub link </div>
+            </div>
+         </div>
     </section>
+
+    <hr>
+
+    <section>
+         <div class="font3">MY Certificate</div>
+
+         <div class="display-3">
+            <div class="card-4 image-3"><img height="100%" width="100%" src="./image/school-marksheet.png" alt=""></div>
+            <div class="card-4  image-3"><img height="100%" width="100%" src="./image/marksheet.png" alt=""></div>
+            <div class="card-4  image-3"><img height="100%" width="100%" src="./image/skiil-marksheet.png" alt=""></div>
+         </div>
+    </section>
+
+   
 </body>
 </html>
